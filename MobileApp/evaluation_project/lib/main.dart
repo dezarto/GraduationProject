@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:evaluation_project/pages/EvaluationPage.dart';
 import 'package:evaluation_project/pages/projectList.dart';
 import 'package:evaluation_project/screens/login_screen.dart';
+import 'package:evaluation_project/pages/evaluation_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -49,8 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: LoginScreen(),
+      body: //LoginScreen(),
       // EvaluationPage(),
+      MyDropDown(),
     );
   }
 }
