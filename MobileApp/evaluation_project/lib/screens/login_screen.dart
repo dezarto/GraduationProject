@@ -1,19 +1,46 @@
-import 'package:evaluation_project/pages/projectList.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:evaluation_project/components/rounded_input_field.dart';
 import 'package:evaluation_project/components/rounded_button.dart';
 
-
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class LoginScreen extends StatelessWidget {
-  //burası
-  final TextEditingController usernameController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController username = TextEditingController();
+  final TextEditingController password = TextEditingController();
 
   LoginScreen({Key? key});
+
+  Future<void> loginUser(String username, String password, BuildContext context) async {
+    var url = Uri.parse('https://b8ba-92-45-86-194.ngrok-free.app');
+
+    var response = await http.post(
+      url,
+      body: {
+        'Username': username,
+        'Password': password,
+      },
+    );
+
+    if (response.statusCode == 200) {
+      var responseData = jsonDecode(response.body);
+      var message = responseData['message'];
+      var usernameResponse = responseData['usernameResponse'];
+      var usernameValue = usernameResponse['username'];
+
+      print(message); // "Login successful"
+      print("Oturum açan kullanıcı: $usernameValue");
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Yonlendirilen()),
+      );
+    } else {
+      print('Giriş başarısız. Hata kodu: ${response.statusCode}');
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +61,7 @@ class LoginScreen extends StatelessWidget {
           ),
           Column(
             children: [
-              const SizedBox(
+              SizedBox(
                 height: 150,
               ),
               Image.asset(
@@ -45,12 +72,12 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin: const EdgeInsets.all(5),
-                    padding: const EdgeInsets.all(20),
+                    margin: EdgeInsets.all(5),
+                    padding: EdgeInsets.all(20),
                     height: 300,
                     width: 350,
                     decoration: BoxDecoration(
-                      color: const Color(0xffF3F3F5),
+                      color: Color(0xffF3F3F5),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
@@ -62,7 +89,7 @@ class LoginScreen extends StatelessWidget {
                           onChange: (value) {
                             // Kullanıcı adı değiştiğinde yapılacak işlemler buraya
                           },
-                          controller: usernameController, // Kontrolcüyü bağlayın
+                          controller: username,
                         ),
                         RoundedInputField(
                           isPassword: true,
@@ -71,22 +98,16 @@ class LoginScreen extends StatelessWidget {
                           onChange: (value) {
                             // Şifre değiştiğinde yapılacak işlemler buraya
                           },
-                          controller: passwordController, // Kontrolcüyü bağlayın
+                          controller: password,
                         ),
                         RoundedButton(
                           text: "LOGIN",
-                          press: () async {
-                            var backResponse = await loginUser(
-                              usernameController.text,
-                              passwordController.text,
+                          press: () {
+                            loginUser(
+                              username.text,
+                              password.text,
+                              context,
                             );
-
-                            if (backResponse.statusCode == 200) {
-                              print("backResponse başarılı");
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProjectList()));
-                            } else {
-                              print('backResponse Giriş başarısız. Hata kodu: ${backResponse.statusCode}');
-                            }
                           },
                           color: Colors.grey,
                         ),
@@ -102,8 +123,7 @@ class LoginScreen extends StatelessWidget {
             child: Opacity(
               opacity: 0.3,
               child: SvgPicture.asset(
-                "lib/"
-                    "assets/images/down.svg",
+                "lib/assets/images/down.svg",
                 height: 130,
                 width: 100,
               ),
@@ -115,30 +135,16 @@ class LoginScreen extends StatelessWidget {
   }
 }
 
-//burası
-
-Future<http.Response> loginUser(String username, String password) async {
-  var url = Uri.parse('https://10.0.2.2:7225/api/Login/login');
-  var response = await http.post(
-    url,
-    headers: {'Content-Type': 'application/json'},
-    body: jsonEncode({'Username': username, 'Password': password}),
-  );
-  print("Satır 127");
-  print(response.statusCode);
-  print(response.body);
-
-  if (response.statusCode == 200) {
-    print("giriş başarılı");
-    var responseData = jsonDecode(response.body);
-    print(responseData);
-    var token = responseData['token'];
-    // Token ile kullanıcıyı yetkilendirme işlemleri burada yapılır
-
-  } else {
-    print('Giriş başarısız. Hata kodu: ${response.statusCode}');
+class Yonlendirilen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Yonlendirilen Ekranı'),
+      ),
+      body: Center(
+        child: Text('Başarılı bir şekilde giriş yaptınız!'),
+      ),
+    );
   }
-
-  return response;
 }
-

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:intl/intl.dart';
 import 'package:evaluation_project/pages/projectList.dart';
+import 'package:evaluation_project/view/components/BottomNavigationBarComponent.dart';
 
 class EvaluationPage extends StatefulWidget {
   const EvaluationPage({super.key});
@@ -2000,6 +2001,7 @@ class _EvaluationPageState extends State<EvaluationPage> {
             ),
           ),
         ),
+        bottomNavigationBar: BottomNavigationBarComponent(),
       ),
     );
   }
