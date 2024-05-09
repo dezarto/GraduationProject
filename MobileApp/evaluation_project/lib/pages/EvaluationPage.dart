@@ -4,6 +4,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:intl/intl.dart';
 import 'package:evaluation_project/pages/projectList.dart';
 import 'package:evaluation_project/view/components/BottomNavigationBarComponent.dart';
+import 'package:evaluation_project/service/UserAuthService.dart';
 
 class EvaluationPage extends StatefulWidget {
   const EvaluationPage({super.key});
@@ -107,6 +108,14 @@ class _EvaluationPageState extends State<EvaluationPage> {
   Widget build(BuildContext context) {
     /// Database Access Point Start
 
+    String? username = UsernameService.usernameValue;
+    if (username != null) {
+      print("Kullanıcı adı: $username");
+    } else {
+      print("Kullanıcı adı henüz ayarlanmadı.");
+    }
+
+
     CollectionReference evaluationProjectRef =
         _firestore.collection("evaluation-project");
     DocumentReference professorRef = evaluationProjectRef.doc("Professor");
@@ -114,7 +123,7 @@ class _EvaluationPageState extends State<EvaluationPage> {
     CollectionReference academicianRef = professorRef.collection("Academician");
     CollectionReference studentListRef = studentRef.collection("studentList");
     DocumentReference academicianRef_1 = academicianRef.doc("Academician2");
-    DocumentReference studentRef_1 = studentListRef.doc("2000004562");
+    DocumentReference studentRef_1 = studentListRef.doc(username);
     DocumentReference evaluationRef = evaluationProjectRef.doc("Evaluation");
 
     /// Database Access Point End

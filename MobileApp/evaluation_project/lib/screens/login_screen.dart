@@ -1,7 +1,9 @@
+import 'package:evaluation_project/service/UserAuthService.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:evaluation_project/components/rounded_input_field.dart';
 import 'package:evaluation_project/components/rounded_button.dart';
+import 'package:evaluation_project/pages/projectList.dart';
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -12,8 +14,9 @@ class LoginScreen extends StatelessWidget {
 
   LoginScreen({Key? key});
 
-  Future<void> loginUser(String username, String password, BuildContext context) async {
-    var url = Uri.parse('https://b8ba-92-45-86-194.ngrok-free.app');
+  Future<void> loginUser(
+      String username, String password, BuildContext context) async {
+    var url = Uri.parse('https://aa22-92-45-86-194.ngrok-free.app/');
 
     var response = await http.post(
       url,
@@ -28,19 +31,18 @@ class LoginScreen extends StatelessWidget {
       var message = responseData['message'];
       var usernameResponse = responseData['usernameResponse'];
       var usernameValue = usernameResponse['username'];
-
+      UsernameService.usernameValue = usernameValue;
       print(message); // "Login successful"
       print("Oturum açan kullanıcı: $usernameValue");
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Yonlendirilen()),
+        MaterialPageRoute(builder: (context) => ProjectList()),
       );
     } else {
       print('Giriş başarısız. Hata kodu: ${response.statusCode}');
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
