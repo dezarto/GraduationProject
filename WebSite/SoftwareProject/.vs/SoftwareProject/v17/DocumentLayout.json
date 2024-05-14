@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\alpar\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\alpar\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SoftwareProject\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:33:51.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "SoftwareProject\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:57:46.817Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
