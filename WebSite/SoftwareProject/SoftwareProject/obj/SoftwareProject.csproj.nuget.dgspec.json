@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alpar\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj": {}
+    "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alpar\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj": {
+    "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alpar\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj",
+        "projectUniqueName": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj",
         "projectName": "SoftwareProject",
-        "projectPath": "C:\\Users\\alpar\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj",
-        "packagesPath": "C:\\Users\\alpar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alpar\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\obj\\",
+        "projectPath": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\SoftwareProject.csproj",
+        "packagesPath": "C:\\Users\\Onur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alpar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Onur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

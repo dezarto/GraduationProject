@@ -1,70 +1,133 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: #dedede;
-    margin: 0;
-    padding: 0;
+﻿:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
 }
 
-.container {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.tempdata {
-    margin-top: 30px;
-    text-align: center;
-    font-family: "Arial", sans-serif;
+body {
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+    .header p {
+        margin: 0 auto;
+        line-height: 2;
+        color: var(--grayishBlue);
+    }
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+
+.red {
+    border-top: 3px solid var(--red);
+}
+
+.blue {
+    border-top: 3px solid var(--blue);
+}
+
+.orange {
+    border-top: 3px solid var(--orange);
 }
 
 h2 {
-    text-align: center;
-}
-
-.form-group {
-
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="date"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-input[type="file"] {
-    margin-top: 5px;
-}
-
-button[type="submit"] {
-    margin: 20px auto 0;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 3px;
-    display: block;
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
 }
 
 
-    button[type="submit"]:hover {
-        background-color: #45a049;
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+
+    .box {
+        width: 20%;
+    }
+
+    .header p {
+        width: 30%;
+    }
+}

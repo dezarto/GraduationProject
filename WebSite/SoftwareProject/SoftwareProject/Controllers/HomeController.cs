@@ -13,6 +13,11 @@ namespace SoftwareProject.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult File()
+        {
+            return View();
+        }
+
         private async Task<bool> IsStudentAllowed(string username)
         {
             // Firestore projenizin kimlik dosyasının yolunu belirtin

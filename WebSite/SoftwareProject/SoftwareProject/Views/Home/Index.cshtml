@@ -1,45 +1,40 @@
 ﻿@{
-    ViewData["Title"] = "Proje Yükleme";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Four Card Feature Section";
 }
 
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/index.css" />
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js" defer></script>
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-storage.js" defer></script>
+    <link rel="stylesheet" href="~/css/index.css">
 </head>
 <body>
-    <div class="tempdata"><h3>@TempData["Username"] </h3></div>
-    <div class="container">
-        <h2>Proje Yükleme</h2>
-        <form asp-action="#" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="Title">Title:</label>
-                <input for="Title" class="form-control" required />
-            </div>
-            <div class="form-group">
-                <label for="Student">Student:</label>
-                <input for="Student" class="form-control" required />
-            </div>
-            <div class="form-group">
-                <label for="SubmittedDate">Submitted Date:</label>
-                <input id="SubmittedDate" class="form-control" type="text" readonly required />
-            </div>
-            <div class="form-group">
-                <label for="Description">Description:</label>
-                <input for="Description" class="form-control" rows="4"></input>
-            </div>
-            <div class="form-group">
-                <label for="File">Dosya Yükle:</label>
-                <input for="File" class="form-control" type="file" required />
-            </div>
-            <button type="submit" class="btn btn-primary">Gönder</button>
-        </form>
+    
+    <div class="row1-container">
+        <div class="box box-down cyan">
+            <h2>My Results</h2>
+            <p>You can view your results on this page.</p>
+            <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
+        </div>
+
+        <div class="box red">
+            <a href="@Url.Action("Admin", "Home")" style="text-decoration: none; font-size: 24px; color: black; ">Calendar</a>
+            <p>Professors can view their allocated Presentation times on this page.</p>
+            <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="">
+        </div>
+
+        <div class="box box-down blue">
+            <a href="@Url.Action("File", "Home")" style="text-decoration: none; font-size: 24px; color: black; ">Upload File</a>
+            <p>Students can upload their reports to the system from here.</p>
+            <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+        </div>
+    </div>
+    <div class="row2-container">
+        <div class="box orange">
+            <a href="@Url.Action("File", "Home")" style="text-decoration: none; font-size: 24px; color: black; ">Necessary Documents</a>
+            <p>Students can view the required documents here.</p>
+            <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="">
+        </div>
     </div>
 </body>
 </html>
