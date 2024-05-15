@@ -88,6 +88,7 @@ img {
 }
 
 .red {
+    margin-top: 60px;
     border-top: 3px solid var(--red);
 }
 
@@ -107,6 +108,7 @@ h2 {
 
 @media (min-width: 950px) {
     .row1-container {
+        margin-top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;

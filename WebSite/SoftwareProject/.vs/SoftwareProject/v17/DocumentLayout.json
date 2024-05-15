@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\alpar\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\onur\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\views\\home\\file.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\views\\home\\file.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\onur\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\alpar\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\onur\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\wwwroot\\css\\file.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\wwwroot\\css\\file.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\onur\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\wwwroot\\css\\results.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\wwwroot\\css\\results.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|c:\\users\\onur\\onedrive\\masa\u00FCst\u00FC\\softwareproject\\softwareproject\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B3EBE1B-C5C6-4DC3-BDC0-67B28FA17E41}|SoftwareProject\\SoftwareProject.csproj|solutionrelative:softwareproject\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,34 +33,65 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SoftwareProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SoftwareProject\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAANUBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T17:54:03.934Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SoftwareProject\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T11:33:51.85Z",
+              "Title": "File.cshtml",
+              "DocumentMoniker": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Views\\Home\\File.cshtml",
+              "RelativeDocumentMoniker": "SoftwareProject\\Views\\Home\\File.cshtml",
+              "ToolTip": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Views\\Home\\File.cshtml",
+              "RelativeToolTip": "SoftwareProject\\Views\\Home\\File.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T17:50:00.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "SoftwareProject\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\alpar\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "SoftwareProject\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T22:57:46.817Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "File.css",
+              "DocumentMoniker": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\File.css",
+              "RelativeDocumentMoniker": "SoftwareProject\\wwwroot\\css\\File.css",
+              "ToolTip": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\File.css",
+              "RelativeToolTip": "SoftwareProject\\wwwroot\\css\\File.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T17:48:52.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Results.css",
+              "DocumentMoniker": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\Results.css",
+              "RelativeDocumentMoniker": "SoftwareProject\\wwwroot\\css\\Results.css",
+              "ToolTip": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\Results.css",
+              "RelativeToolTip": "SoftwareProject\\wwwroot\\css\\Results.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T17:47:44.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "SoftwareProject\\Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\Onur\\OneDrive\\Masa\u00FCst\u00FC\\SoftwareProject\\SoftwareProject\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "SoftwareProject\\Views\\Home\\Admin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T17:36:36.404Z"
             }
           ]
         }

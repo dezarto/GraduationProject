@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\SoftwareProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\diploma.jpg",
+      "PackagePath": "staticwebassets\\Photo\\diploma.jpg"
+    },
+    {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\ikuGece.jpeg",
       "PackagePath": "staticwebassets\\Photo\\ikuGece.jpeg"
     },
     {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\istanbul-kultur-universitesi.jpg",
       "PackagePath": "staticwebassets\\Photo\\istanbul-kultur-universitesi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\kepatma.jpg",
+      "PackagePath": "staticwebassets\\Photo\\kepatma.jpg"
     },
     {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\mezun.jpeg",
@@ -25,12 +33,44 @@
       "PackagePath": "staticwebassets\\Photo\\mezuniyet.mp4"
     },
     {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\mezuniyetkep.jpg",
+      "PackagePath": "staticwebassets\\Photo\\mezuniyetkep.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\projectphtoto.jpg",
+      "PackagePath": "staticwebassets\\Photo\\projectphtoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\raporfoto.jpg",
+      "PackagePath": "staticwebassets\\Photo\\raporfoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\resim.jpg",
+      "PackagePath": "staticwebassets\\Photo\\resim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\sunumfoto.jpg",
+      "PackagePath": "staticwebassets\\Photo\\sunumfoto.jpg"
+    },
+    {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\Photo\\İstanbulKültürÜniversitesi.jpg",
       "PackagePath": "staticwebassets\\Photo\\İstanbulKültürÜniversitesi.jpg"
     },
     {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\File.css",
       "PackagePath": "staticwebassets\\css\\File.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\Navbar.css",
+      "PackagePath": "staticwebassets\\css\\Navbar.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\NecessaryDocument.css",
+      "PackagePath": "staticwebassets\\css\\NecessaryDocument.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\Results.css",
+      "PackagePath": "staticwebassets\\css\\Results.css"
     },
     {
       "Id": "C:\\Users\\Onur\\OneDrive\\Masaüstü\\SoftwareProject\\SoftwareProject\\wwwroot\\css\\index.css",

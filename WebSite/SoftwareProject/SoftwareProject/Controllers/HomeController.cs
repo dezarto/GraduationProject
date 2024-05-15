@@ -18,6 +18,16 @@ namespace SoftwareProject.Controllers
             return View();
         }
 
+        public IActionResult Results()
+        {
+            return View();
+        }
+
+        public IActionResult NecessaryDocument()
+        {
+            return View();
+        }
+
         private async Task<bool> IsStudentAllowed(string username)
         {
             // Firestore projenizin kimlik dosyasının yolunu belirtin
