@@ -73,13 +73,12 @@ class GroupPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              // Comment kısmını burada gösterelim
               Row(
-                mainAxisAlignment: MainAxisAlignment.start, // Comment metnini sola yasla
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
                     'Comment: ',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold), // Başlığı bold yap
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     '${groupData!['Comment']}',
@@ -90,7 +89,7 @@ class GroupPage extends StatelessWidget {
             ],
           ),
         )
-            : CircularProgressIndicator(), // groupData null değilse tabloyu göster, null ise bir yüklenme göstergesi (CircularProgressIndicator) göster
+            : CircularProgressIndicator(),
       ),
     );
   }
@@ -105,7 +104,9 @@ class MyDropDown extends StatelessWidget {
       stream: _firestore.collection('results').snapshots(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
-          return CircularProgressIndicator();
+          return Center(
+            child: CircularProgressIndicator(),
+          );
         }
         final List<DocumentSnapshot> documents = snapshot.data!.docs;
         return Scaffold(
@@ -121,64 +122,67 @@ class MyDropDown extends StatelessWidget {
             ),
             backgroundColor: Colors.lightBlueAccent,
           ),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: documents.map((doc) {
-              final groupName = doc.id;
-              return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0), // Butonlar arasında dikey boşluk ekleyin
-                child: SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () async {
-                      try {
-                        // Firestore'dan veri çekme işlemi
-                        DocumentSnapshot documentSnapshot = await _firestore.collection('results').doc(groupName).get();
+          body: SingleChildScrollView( // SingleChildScrollView ekledik
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: documents.map((doc) {
+                final groupName = doc.id;
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        try {
+                          // Firestore'dan veri çekme işlemi
+                          DocumentSnapshot documentSnapshot = await _firestore.collection('results').doc(groupName).get();
 
-                        if (documentSnapshot.exists) {
-                          Map<String, dynamic>? groupData = documentSnapshot.data() as Map<String, dynamic>?;
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => GroupPage(groupName, groupData),
-                            ),
-                          );
-                        } else {
+                          if (documentSnapshot.exists) {
+                            Map<String, dynamic>? groupData = documentSnapshot.data() as Map<String, dynamic>?;
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => GroupPage(groupName, groupData),
+                              ),
+                            );
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text('Group data for $groupName not found!'),
+                              ),
+                            );
+                          }
+                        } catch (e) {
+                          print('Error getting group data: $e');
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text('Group data for $groupName not found!'),
+                              content: Text('An error occurred while getting group data!'),
                             ),
                           );
                         }
-                      } catch (e) {
-                        print('Error getting group data: $e');
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('An error occurred while getting group data!'),
-                          ),
-                        );
-                      }
-                    },
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent), // Buton rengini mavi olarak ayarla
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Text(
-                        groupName.toUpperCase(),
-                        style: TextStyle(fontSize: 25, color: Colors.white), // Yazı rengini beyaz yap
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all<Color>(Colors.lightBlueAccent),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(
+                          groupName.toUpperCase(),
+                          style: TextStyle(fontSize: 25, color: Colors.white),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              );
-            }).toList(),
+                );
+              }).toList(),
+            ),
           ),
         );
       },
     );
   }
 }
+
 
 void main() {
   runApp(MaterialApp(
