@@ -1,3 +1,0 @@
-# GraduationProject
-
-düzenlenecek
